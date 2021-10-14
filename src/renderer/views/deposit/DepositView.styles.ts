@@ -1,0 +1,24 @@
+import * as A from 'antd'
+import styled from 'styled-components'
+
+import { BackLink as BackLinkUI } from '../../components/uielements/backLink'
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+`
+
+export const TopControlsContainer = styled(A.Row).attrs({
+  justify: 'space-between',
+  align: 'middle'
+})`
+  margin-bottom: 20px;
+`
+
+export const BackLink = styled(BackLinkUI)`
+  margin: 0 !important;
+`
